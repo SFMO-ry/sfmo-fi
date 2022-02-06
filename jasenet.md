@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Jäsenyhdistykset"
-permalink: /oodi
+permalink: /jasenet
 ---
 
 Turun yliopiston matemaattisten ja fysikaalisten tieteiden opiskelijoiden yhdistys Delta ry  
