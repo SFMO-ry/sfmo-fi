@@ -1,5 +1,5 @@
 ---
-title: Säännöt - Suomen fysiikan- ja matematiikanopiskelijat ry
+title: Säännöt
 ---
 
 # Yhdistyksen säännöt
