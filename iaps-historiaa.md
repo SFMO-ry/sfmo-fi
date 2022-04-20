@@ -103,6 +103,9 @@ XXXI |	2016 |	Heidelberg |	Saksa
 XXXII |	2017 |	Torino |	Italia
 XXXIII |	2018 |	Helsinki |	Suomi
 XXXIV |	2019 |	Köln |	Saksa
+peruttu | 2020 | | |
+XXXV | 2021 | Kööpenhamina | Tanska
+ 
 
 ## 5. Suomen Fysiikanopiskelijat ry
 
