@@ -1,5 +1,11 @@
 ![SFMO:n logo](</logo.png>)
 
+Suomen Fysiikan- ja matematiikanopiskelijat ry on suomalaisten fysiikan- ja matematiikanopiskelijoiden yhteistyöjärjestö, jonka tarkoituksena on edistää opiskelijoiden keskinäistä yhteydenpitoa ja yhteistoimintaa ja toimia samalla kansainvälisen IAPS:in (International Association of Physics Students) kansallisena osastona.
+
+The Finnish Association of Physics Students is a National Committee of IAPS (International Association of Physics Students). Its purpose is to foster contacts and cooperation between physics students in Finland and abroad. 
+
+---
+
 Yhdistyksen säännöt löytyvät sivulta: [saannot](/saannot)
 
 SFMO ry:n hallitus: [hallitus 2022](/hallitus-2022)
