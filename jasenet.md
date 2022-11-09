@@ -73,8 +73,8 @@ matrix-hallitus[ät]helsinki.fi
 Luuppi ry  
 Tampereen yliopisto  
 Luuppi ry  
-Yliopistonkatu 58B
-33100 Tampere
+Yliopistonkatu 58B  
+33100 Tampere  
 hallitus[ät]luuppi.fi
 
 Lateksii ry  
