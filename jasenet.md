@@ -54,7 +54,7 @@ Jyväskylän yliopisto
 Mattilanniemi/MaD 241  
 PL 35  
 40014 Jyväskylän yliopisto  
-ynna-hallitus[ət]lists.jyu.fi  
+tiedottaja[ät]ynna.fi 
 
 Fysikerföreningen Quantum vid Åbo Akademi r.f.  
 Åbo Akademi  
@@ -73,8 +73,8 @@ matrix-hallitus[ät]helsinki.fi
 Luuppi ry  
 Tampereen yliopisto  
 Luuppi ry  
-Pinni B0030  
-33014 Tampereen yliopisto  
+Yliopistonkatu 58B
+33100 Tampere
 hallitus[ät]luuppi.fi
 
 Lateksii ry  
