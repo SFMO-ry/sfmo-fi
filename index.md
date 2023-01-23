@@ -28,3 +28,4 @@ P.O.Box 64
 FIN-00014 University of Helsinki
 Finland
 ```
+Laita SFMO myös seurantaan [Instagramissa](https://www.instagram.com/sfmo.official/?hl=fi)!
