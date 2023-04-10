@@ -8,7 +8,7 @@ The Finnish Association of Physics Students is a National Committee of IAPS (Int
 
 Yhdistyksen säännöt löytyvät sivulta: [saannot](/saannot)
 
-SFMO ry:n hallitus: [hallitus 2022](/hallitus-2022)
+SFMO ry:n hallitus: [hallitus 2023](/hallitus-2023)
 
 Jäsenyhdistysten yhteystiedot: [jäsenet](/jasenet)
 
