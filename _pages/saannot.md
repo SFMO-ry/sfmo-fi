@@ -1,5 +1,7 @@
 ---
 title: Säännöt
+layout: splash
+permalink: /saannot
 ---
 
 # Yhdistyksen säännöt

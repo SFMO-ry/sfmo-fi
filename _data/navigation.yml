@@ -1,0 +1,20 @@
+# main links
+main:
+  - title: "Hallitus"
+    url: /hallitus
+  - title: "Jäsenet"
+    url: /jasenet
+  - title: "Oodi"
+    url: /oodi
+  - title: "IAPS-historiaa"
+    url: /iaps-historiaa
+  - title: "Säännöt"
+    url: /saannot
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/

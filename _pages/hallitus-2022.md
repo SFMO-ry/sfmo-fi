@@ -1,3 +1,7 @@
+---
+layout: splash
+permalink: /hallitus-2022
+---
 # Hallitus 2022
 
 Suomen fysiikan- ja matematiikanopiskelijat ry:n hallitus vuonna 2022

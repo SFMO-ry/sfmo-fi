@@ -1,3 +1,7 @@
+---
+layout: splash
+permalink: /hallitus-2023
+---
 # Hallitus 2023
 
 Suomen fysiikan- ja matematiikanopiskelijat ry:n hallitus vuonna 2023

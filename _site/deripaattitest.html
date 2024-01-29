@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Sine Wave with Boat</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        canvas {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="sineCanvas"></canvas>
+
+    <!-- Boat image -->
+    <img id="boatImage" src="paatti.png" alt="Boat" style="display: none;">
+
+    <script>
+        const canvas = document.getElementById("sineCanvas");
+        const context = canvas.getContext("2d");
+
+        // Set canvas size
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        // Sine wave parameters
+        const amplitude = 100;
+        const frequency = 0.006;
+        let phase = 0;
+
+        // Boat parameters
+        const boatImage = document.getElementById("boatImage");
+        const boatWidth = 500;
+        const boatHeight = 300;
+        let boatX = canvas.width / 2 - boatWidth / 2;
+        let boatY = canvas.height / 2;
+
+        function drawSineWave() {
+            // Clear canvas
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw sine wave
+            context.beginPath();
+            context.moveTo(0, canvas.height / 2);
+
+            for (let x = 0; x < canvas.width; x++) {
+                const y = canvas.height / 2 + amplitude * Math.sin(frequency * x + phase-0.6);
+                context.lineTo(x, y);
+            }
+
+            context.strokeStyle = "#000";
+            context.stroke();
+        }
+
+        function drawBoat() {
+            // Draw boat image
+            context.drawImage(boatImage, boatX, boatY - boatHeight / 2, boatWidth, boatHeight);
+        }
+
+        function animate() {
+            // Update phase to make the wave move
+            phase += 0.02;
+
+            // Get current wave amplitude
+            const currentAmplitude = amplitude * Math.sin(frequency * boatX + phase-0.1);
+
+            // Update boat position based on the current amplitude
+            boatY = canvas.height / 2 + currentAmplitude+25;
+
+            // Draw the sine wave
+            drawSineWave();
+
+            // Draw the boat
+            drawBoat();
+
+            // Request the next animation frame
+            requestAnimationFrame(animate);
+        }
+
+        // Start the animation
+        animate();
+
+        // Resize canvas when the window is resized
+        window.addEventListener("resize", () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            boatX = canvas.width / 2 - boatWidth / 2; // Center the boat after resizing
+        });
+    </script>
+</body>
+</html>

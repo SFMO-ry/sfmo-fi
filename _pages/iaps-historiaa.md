@@ -1,3 +1,7 @@
+---
+layout: splash
+permalink: /iaps-historiaa
+---
 # IAPS-historiaa
 
 International Association of Physics Students (IAPS)

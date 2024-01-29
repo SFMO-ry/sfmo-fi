@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Architects+Daughter">
+    <title>Moving Sine Wave with Boat</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            height: 100vh; /* Make the body take up the full height of the viewport */
+            display: flex;
+            flex-direction: column;
+            font-family: "Architects Daughter", sans-s;
+        }
+        canvas {
+            flex: 1; /* Make the canvas take up the remaining space in the flex container */
+            width: 100%;
+        }
+        #sineCanvas {
+            background-color: white;
+            position: absolute;
+        }
+    </style>
+   </head>
+<body>
+    <canvas id="sineCanvas"></canvas>
+    <!-- Boat image -->
+    <img id="boatImage" src="../paattiv3.png" alt="Boat" style="display: none;">
+
+    <script>
+        const canvas = document.getElementById("sineCanvas");
+        const context = canvas.getContext("2d");
+        // Set canvas size
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        let fontSize = Math.min((canvas.width / 100) * 5.5, 40); // Calculate font size based on viewport width
+        let lineHeight = fontSize; // Adjust this value to control the spacing between lines
+        context.font = `${fontSize}px Architects Daughter`;
+        // Sine wave parameters
+        const amplitude = 60;
+        const frequency = 0.006;
+        let phase = 0;
+
+        context.fillText('TESTEST!', 50, 100);
+        // Boat parameters
+        const boatImage = document.getElementById("boatImage");
+        const boatWidth = 400;
+        const boatHeight = 300;
+        let boatX = canvas.width / 2 - boatWidth / 2;
+        let boatY = canvas.height / 2;
+        let boatRotation = 0;
+
+        function drawGraphPaper() {
+            // Draw horizontal grid lines
+            for (let y = 0; y < canvas.height; y += 20) {
+                context.beginPath();
+                context.moveTo(0, y);
+                context.lineTo(canvas.width, y);
+                context.strokeStyle = "#ddd"; // Grid line color
+                context.stroke();
+            }
+
+            // Draw vertical grid lines
+            for (let x = 0; x < canvas.width; x += 20) {
+                context.beginPath();
+                context.moveTo(x, 0);
+                context.lineTo(x, canvas.height);
+                context.strokeStyle = "#ddd"; // Grid line color
+                context.stroke();
+            }
+        }
+        function drawSineWave() {
+            // Clear canvas
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+            drawGraphPaper();
+            // Draw sine wave
+            context.beginPath();
+            context.moveTo(0, canvas.height / 2);
+            context.font = `${fontSize}px Architects Daughter`;
+            let infoText = 'Helsinki - Tallinna 22h-risteily!\nIllan pääesintyjä BESS\nLähtö pe 22.3 klo 18.35\nHinta: 48€/hytti+polttoainemaksu';
+            var infoLines = infoText.split('\n');
+            for (var i = 0; i < infoLines.length; i++) {
+                context.fillText(infoLines[i], 40, 100 + i * lineHeight);
+             }
+            for (let x = 0; x < canvas.width; x++) {
+                const y = canvas.height / 2 + amplitude * Math.sin(frequency * x + phase-0.6);
+                context.lineTo(x, y);
+            }
+
+            context.strokeStyle = "#000";
+            context.stroke();
+        }
+
+        function drawBoat() {
+            // Calculate slope at boat position
+            const slope = amplitude * frequency * Math.cos(frequency * boatX + phase);
+
+            // Calculate rotation angle based on slope
+            boatRotation = Math.atan(slope);
+
+            // Draw boat image with rotation
+            context.save();
+            context.translate(boatX + boatWidth / 2, boatY);
+            context.rotate(boatRotation-(20 * Math.PI / 180));
+            context.drawImage(boatImage, -boatWidth / 2, -boatHeight / 2, boatWidth, boatHeight);
+            context.restore();
+        }
+
+        function animate() {
+            // Update phase to make the wave move
+            phase -= 0.02;
+
+            // Get current wave amplitude
+            const currentAmplitude = amplitude * Math.sin(frequency * boatX + phase-0.1);
+
+            // Update boat position based on the current amplitude
+            boatY = canvas.height / 2 + currentAmplitude+15;
+
+            // Draw the sine wave
+            drawSineWave();
+
+            // Draw the boat
+            drawBoat();
+
+            // Request the next animation frame
+            requestAnimationFrame(animate);
+        }
+
+        // Start the animation
+        animate();
+
+        // Resize canvas when the window is resized
+        window.addEventListener("resize", () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            fontSize = 4*(canvas.width / 100); // Calculate font size based on viewport width
+            boatX = canvas.width / 2 - boatWidth / 2; // Center the boat after resizing
+        });
+    </script>
+</body>
+</html>
