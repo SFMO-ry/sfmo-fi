@@ -177,14 +177,14 @@
         context.font = `${fontSize}px Architects Daughter`;
         // Sine wave parameters
         const amplitude = 60;
-        const frequency = 0.006;
+        const frequency = 0.1*100/canvas.height;
         let phase = 0;
 
         context.fillText('TESTEST!', 50, 100);
         // Boat parameters
         const boatImage = document.getElementById("boatImage");
-        const boatWidth = 400;
-        const boatHeight = 300;
+        const boatWidth = canvas.height / 5;
+        const boatHeight = canvas.height / 5;
         let boatX = canvas.width / 2 - boatWidth / 2;
         let boatY = canvas.height / 2;
         let boatRotation = 0;
@@ -224,7 +224,7 @@
              }
             for (let x = 0; x < canvas.width; x++) {
                 const y = canvas.height / 2 + amplitude * Math.sin(frequency * x + phase-0.6);
-                context.lineTo(x, y);
+                context.lineTo(x, y+100);
             }
 
             context.strokeStyle = "#000";
@@ -240,7 +240,7 @@
 
             // Draw boat image with rotation
             context.save();
-            context.translate(boatX + boatWidth / 2, boatY);
+            context.translate(boatX + boatWidth / 2, boatY+100);
             context.rotate(boatRotation-(20 * Math.PI / 180));
             context.drawImage(boatImage, -boatWidth / 2, -boatHeight / 2, boatWidth, boatHeight);
             context.restore();
