@@ -2,7 +2,7 @@
 layout: splash
 permalink: /
 ---
-![SFMO:n logo](</assets/images/SFMOlogo.svg>)
+![SFMO:n logo](<assets/images/SFMOlogo.svg>)
 
 Suomen Fysiikan- ja matematiikanopiskelijat ry on suomalaisten fysiikan- ja matematiikanopiskelijoiden yhteistyöjärjestö, jonka tarkoituksena on edistää opiskelijoiden keskinäistä yhteydenpitoa ja yhteistoimintaa ja toimia samalla kansainvälisen IAPS:in (International Association of Physics Students) kansallisena osastona.
 
