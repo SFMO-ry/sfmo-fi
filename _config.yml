@@ -1,7 +1,7 @@
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 layout: single
 include: ["_pages"]
-minimal_mistakes_skin: "neon"
+minimal_mistakes_skin: "air"
 logo: "/assets/images/SFMO-logo_small.svg"
 title: "Suomen fysiikan- ja matematiikanopiskelijat ry"
 description: "Suomen fysiikan- ja matematiikanopiskelijat ry"
