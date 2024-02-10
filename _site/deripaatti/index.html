@@ -163,7 +163,9 @@
     <img id="boatImage" src="../paattiv3.png" alt="Boat" style="display: none;">
 
     <script>
-        const canvas = document.getElementById("sineCanvas");
+        let canvas = document.getElementById("sineCanvas");
+        let initContent = document.getElementsByClassName("initial-content")[0];
+        console.log(initContent);
         const context = canvas.getContext("2d");
         // Set canvas size
         canvas.width = window.innerWidth;
@@ -174,10 +176,11 @@
         context.font = `${fontSize}px Architects Daughter`;
         // Sine wave parameters
         const amplitude = 60;
-        const frequency = 0.1*100/canvas.height;
+        let speedAmp = 1;
+        let frequency = 0.1*100/canvas.height;
+        
         let phase = 0;
 
-        context.fillText('TESTEST!', 50, 100);
         // Boat parameters
         const boatImage = document.getElementById("boatImage");
         const boatWidth = canvas.height / 5;
@@ -185,7 +188,9 @@
         let boatX = canvas.width / 2 - boatWidth / 2;
         let boatY = canvas.height / 2;
         let boatRotation = 0;
-
+        initContent.addEventListener('click', function(e) {
+            speedAmp = speedAmp+0.1;
+        });
         function drawGraphPaper() {
             // Draw horizontal grid lines
             for (let y = 0; y < canvas.height; y += 20) {
@@ -245,7 +250,7 @@
 
         function animate() {
             // Update phase to make the wave move
-            phase -= 0.02;
+            phase -= 0.02*speedAmp;
 
             // Get current wave amplitude
             const currentAmplitude = amplitude * Math.sin(frequency * boatX + phase-0.1);
