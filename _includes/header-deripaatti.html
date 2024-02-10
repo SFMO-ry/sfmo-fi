@@ -15,13 +15,10 @@
             flex-direction: column;
             font-family: "Architects Daughter", sans-s;
         }
-        canvas {
-            flex: 1; /* Make the canvas take up the remaining space in the flex container */
-            width: 100%;
-        }
         #sineCanvas {
             background-color: white;
             position: absolute;
+            z-index: -1;
         }
     </style>
    </head>
@@ -88,7 +85,7 @@
                 context.fillText(infoLines[i], 40, 100 + i * lineHeight);
              }
             for (let x = 0; x < canvas.width; x++) {
-                const y = canvas.height / 2 + amplitude * Math.sin(frequency * x + phase-0.6);
+                const y = canvas.height / 2.3 + amplitude * Math.sin(frequency * x + phase-0.6);
                 context.lineTo(x, y+100);
             }
 
@@ -119,7 +116,7 @@
             const currentAmplitude = amplitude * Math.sin(frequency * boatX + phase-0.1);
 
             // Update boat position based on the current amplitude
-            boatY = canvas.height / 2 + currentAmplitude+15;
+            boatY = canvas.height / 2.3 + currentAmplitude+15;
 
             // Draw the sine wave
             drawSineWave();
@@ -138,7 +135,9 @@
         window.addEventListener("resize", () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
-            fontSize = 4*(canvas.width / 100); // Calculate font size based on viewport width
+            fontSize = Math.min((canvas.width / 100) * 5.5, 40); // Recalculate font size based on viewport width
+            lineHeight = fontSize; // Adjust this value to control the spacing between lines
+            context.font = `${fontSize}px Architects Daughter`; // Set the new font size
             boatX = canvas.width / 2 - boatWidth / 2; // Center the boat after resizing
         });
     </script>

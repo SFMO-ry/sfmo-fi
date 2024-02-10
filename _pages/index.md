@@ -30,5 +30,5 @@ Gustaf Hällströmin katu 2
 P.O.Box 64
 FIN-00014 University of Helsinki
 Finland
-sfmo.hallitus@gmail.com
+sfmo-hallitus@googlegroups.com
 ```

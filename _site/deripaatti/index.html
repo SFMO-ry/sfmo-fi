@@ -150,13 +150,10 @@
             flex-direction: column;
             font-family: "Architects Daughter", sans-s;
         }
-        canvas {
-            flex: 1; /* Make the canvas take up the remaining space in the flex container */
-            width: 100%;
-        }
         #sineCanvas {
             background-color: white;
             position: absolute;
+            z-index: -1;
         }
     </style>
    </head>
@@ -223,7 +220,7 @@
                 context.fillText(infoLines[i], 40, 100 + i * lineHeight);
              }
             for (let x = 0; x < canvas.width; x++) {
-                const y = canvas.height / 2 + amplitude * Math.sin(frequency * x + phase-0.6);
+                const y = canvas.height / 2.3 + amplitude * Math.sin(frequency * x + phase-0.6);
                 context.lineTo(x, y+100);
             }
 
@@ -254,7 +251,7 @@
             const currentAmplitude = amplitude * Math.sin(frequency * boatX + phase-0.1);
 
             // Update boat position based on the current amplitude
-            boatY = canvas.height / 2 + currentAmplitude+15;
+            boatY = canvas.height / 2.3 + currentAmplitude+15;
 
             // Draw the sine wave
             drawSineWave();
@@ -273,7 +270,9 @@
         window.addEventListener("resize", () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
-            fontSize = 4*(canvas.width / 100); // Calculate font size based on viewport width
+            fontSize = Math.min((canvas.width / 100) * 5.5, 40); // Recalculate font size based on viewport width
+            lineHeight = fontSize; // Adjust this value to control the spacing between lines
+            context.font = `${fontSize}px Architects Daughter`; // Set the new font size
             boatX = canvas.width / 2 - boatWidth / 2; // Center the boat after resizing
         });
     </script>
@@ -282,7 +281,6 @@
 
 
 <!-- Your page content goes here -->
-<p>Deripaattilla ollaan merellä.</p>
 
   
 <!-- Your custom content goes here -->
@@ -298,23 +296,26 @@
 
 <!-- end custom footer snippets -->
         <div class="page__footer-follow">
-  <ul class="social-icons">
-    
-
-    
+    <ul class="social-icons">
+      
+  
       
         
-          <li><a href="https://www.instagram.com/sfmo.official/?hl=fi" rel="nofollow noopener noreferrer"><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+          
+            <li><a href="https://www.instagram.com/sfmo.official/?hl=fi" rel="nofollow noopener noreferrer"><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/sfmo.official" rel="nofollow noopener noreferrer"><i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+          
         
       
-    
-
-    
-  </ul>
-</div>
-
-<div class="page__footer-copyright">&copy; 2024 Suomen fysiikan- ja matematiikanopiskelijat ry. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
-
+  
+      
+    </ul>
+  </div>
+  
+  <div class="page__footer-copyright">&copy; 2024 Suomen fysiikan- ja matematiikanopiskelijat ry.</div>
       </footer>
     </div>
 
