@@ -22,9 +22,6 @@ Instructions on installing Ruby and Jekyll for Windows can be found [here](https
 - [Bundler](https://bundler.io/)
 
 1. Fork this repository by clicking on the "Fork" button at the top right of this page. This creates a copy of the repository in your GitHub account.
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/SFMO-ry/sfmo-fi.git
 2. Clone your forked repository to your local machine. Replace `your-username` with your GitHub username and `your-repo` with the name of your forked repository.
    ```bash
    # Clone your forked repository
