@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Your Deripaatti Page - Suomen fysiikan- ja matematiikanopiskelijat ry</title>
+<!-- begin _includes/seo.html --><title>Deripaatti - Suomen fysiikan- ja matematiikanopiskelijat ry</title>
 <meta name="description" content="Suomen fysiikan- ja matematiikanopiskelijat ry">
 
 
@@ -17,7 +17,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Suomen fysiikan- ja matematiikanopiskelijat ry">
-<meta property="og:title" content="Your Deripaatti Page">
+<meta property="og:title" content="Deripaatti">
 <meta property="og:url" content="http://localhost:4000/deripaatti/">
 
 
@@ -78,9 +78,15 @@
     <!-- start custom head snippets -->
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
-
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/site.webmanifest">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/assets/images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
 <!-- end custom head snippets -->
-
   </head>
 
   <body class="layout--deripaatti">
@@ -119,6 +125,10 @@
               <a href="/iaps-historiaa">IAPS-historiaa</a>
             </li><li class="masthead__menu-item">
               <a href="/saannot">Säännöt</a>
+            </li><li class="masthead__menu-item">
+              <a href="/integraatiofest">Integraatiofest</a>
+            </li><li class="masthead__menu-item">
+              <a href="/deripaatti">Deripaatti</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -154,6 +164,26 @@
             background-color: white;
             position: absolute;
             z-index: -1;
+        }
+        h1 {
+            font-family: "Architects Daughter", sans-s;
+        }
+        #deripaatti-info {
+            text-align: center;
+            overflow-y: scroll;
+            font-size: x-large;
+            position: absolute;
+            max-height: 50vh;
+            background: rgba(28, 240, 255, 0.05);
+            border-radius: 10%;
+            border: 0.5px solid black;
+            left:5%;
+            width: 90%;
+            -ms-overflow-style: none;  /* Internet Explorer 10+ */
+            scrollbar-width: none;  /* Firefox */
+        }
+        #deripaatti-info::-webkit-scrollbar {
+            display: none; 
         }
     </style>
    </head>
@@ -219,13 +249,13 @@
             context.beginPath();
             context.moveTo(0, canvas.height / 2);
             context.font = `${fontSize}px Architects Daughter`;
-            let infoText = 'Helsinki - Tallinna 22h-risteily!\nIllan pääesintyjä BESS\nLähtö pe 22.3 klo 18.35\nHinta: 48€/hytti+polttoainemaksu';
+           /* let infoText = 'Helsinki - Tallinna 22h-risteily!\nIllan pääesintyjä BESS\nLähtö pe 22.3 klo 18.35\nHinta: 48€/hytti+polttoainemaksu';
             var infoLines = infoText.split('\n');
             for (var i = 0; i < infoLines.length; i++) {
                 context.fillText(infoLines[i], 40, 100 + i * lineHeight);
-             }
+             }*/
             for (let x = 0; x < canvas.width; x++) {
-                const y = canvas.height / 2.3 + amplitude * Math.sin(frequency * x + phase-0.6);
+                const y = canvas.height / 2 + amplitude * Math.sin(frequency * x + phase-0.6);
                 context.lineTo(x, y+100);
             }
 
@@ -256,7 +286,7 @@
             const currentAmplitude = amplitude * Math.sin(frequency * boatX + phase-0.1);
 
             // Update boat position based on the current amplitude
-            boatY = canvas.height / 2.3 + currentAmplitude+15;
+            boatY = canvas.height / 2 + currentAmplitude+15;
 
             // Draw the sine wave
             drawSineWave();
@@ -286,11 +316,34 @@
 
 
 <!-- Your page content goes here -->
+<div id="deripaatti-info">
+<h1> Deripaatti 2024 </h1>
+<b>Ohoi!</b><br />
+Rakkaat SFMO:n jäsenjärjestöt, nyt se on varmaa. Pitkään odotettu <b>Deripaatti 2024</b> järjestetään 22.3.–23.3. Tallinkin M/S Victoria I laivalla. Tämä 22 tuntia kestävä spektaakkeli kerää yhteen kaikki fysiikan ja matematiikan opiskelijat ympäri Suomen unohtumattoman meriseikkailun pariin.
+<br /><br />
+<h1><b>Risteilyaikataulu:</b></h1>
+<b>22.3.</b>
+<li>Lähtö 18.35 <b>Helsinki</b> (Länsiterminaali 2)</li>
+<b>23.3.</b>
+<li>Ostokset Tallinnassa 8.00–12.00</li>
+<li>Lähtö 12.30 <b>Tallinnasta</b></li>
+<li>Paluu 16.00 <b>Helsinkiin</b></li>
+<br />
+<h1> Illan pääesintyjä <b><a href="https://open.spotify.com/artist/3iF1ik49IHY72yBodxN9ec?si=oKoOc-9LQFeaC2Y7JR906Q">BESS</a></b> </h1>
+<h1><b>Mitä tarvitset mukaan:</b></h1>
+<li>Henkilöllisyystodistuksen
+<li>Haalarit
+<li>Juhlamieltä!
+<br /><br />
+Laivakohtaisen infon löydät osoitteesta <a href="https://fi.tallink.com/victoria">Tallink Silja</a>
+</li></li></li></div>
 
   
 <!-- Your custom content goes here -->
 
-
+<style>
+    
+</style>
     </div>
 
     

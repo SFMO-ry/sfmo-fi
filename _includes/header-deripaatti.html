@@ -20,6 +20,26 @@
             position: absolute;
             z-index: -1;
         }
+        h1 {
+            font-family: "Architects Daughter", sans-s;
+        }
+        #deripaatti-info {
+            text-align: center;
+            overflow-y: scroll;
+            font-size: x-large;
+            position: absolute;
+            max-height: 50vh;
+            background: rgba(28, 240, 255, 0.05);
+            border-radius: 10%;
+            border: 0.5px solid black;
+            left:5%;
+            width: 90%;
+            -ms-overflow-style: none;  /* Internet Explorer 10+ */
+            scrollbar-width: none;  /* Firefox */
+        }
+        #deripaatti-info::-webkit-scrollbar {
+            display: none; 
+        }
     </style>
    </head>
 <body>
@@ -84,13 +104,13 @@
             context.beginPath();
             context.moveTo(0, canvas.height / 2);
             context.font = `${fontSize}px Architects Daughter`;
-            let infoText = 'Helsinki - Tallinna 22h-risteily!\nIllan pääesintyjä BESS\nLähtö pe 22.3 klo 18.35\nHinta: 48€/hytti+polttoainemaksu';
+           /* let infoText = 'Helsinki - Tallinna 22h-risteily!\nIllan pääesintyjä BESS\nLähtö pe 22.3 klo 18.35\nHinta: 48€/hytti+polttoainemaksu';
             var infoLines = infoText.split('\n');
             for (var i = 0; i < infoLines.length; i++) {
                 context.fillText(infoLines[i], 40, 100 + i * lineHeight);
-             }
+             }*/
             for (let x = 0; x < canvas.width; x++) {
-                const y = canvas.height / 2.3 + amplitude * Math.sin(frequency * x + phase-0.6);
+                const y = canvas.height / 2 + amplitude * Math.sin(frequency * x + phase-0.6);
                 context.lineTo(x, y+100);
             }
 
@@ -121,7 +141,7 @@
             const currentAmplitude = amplitude * Math.sin(frequency * boatX + phase-0.1);
 
             // Update boat position based on the current amplitude
-            boatY = canvas.height / 2.3 + currentAmplitude+15;
+            boatY = canvas.height / 2 + currentAmplitude+15;
 
             // Draw the sine wave
             drawSineWave();
