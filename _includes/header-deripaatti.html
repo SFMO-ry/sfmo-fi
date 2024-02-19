@@ -28,17 +28,21 @@
             overflow-y: scroll;
             font-size: x-large;
             position: absolute;
-            max-height: 50vh;
+            max-height: 55vh;
             background: rgba(28, 240, 255, 0.05);
             border-radius: 10%;
             border: 0.5px solid black;
             left:5%;
             width: 90%;
+            margin-top: 5px;
             -ms-overflow-style: none;  /* Internet Explorer 10+ */
             scrollbar-width: none;  /* Firefox */
         }
         #deripaatti-info::-webkit-scrollbar {
             display: none; 
+        }
+        #footer {
+            z-index: -2;
         }
     </style>
    </head>
@@ -110,7 +114,7 @@
                 context.fillText(infoLines[i], 40, 100 + i * lineHeight);
              }*/
             for (let x = 0; x < canvas.width; x++) {
-                const y = canvas.height / 2 + amplitude * Math.sin(frequency * x + phase-0.6);
+                const y = canvas.height / 1.6 + amplitude * Math.sin(frequency * x + phase-0.6);
                 context.lineTo(x, y+100);
             }
 
@@ -141,7 +145,7 @@
             const currentAmplitude = amplitude * Math.sin(frequency * boatX + phase-0.1);
 
             // Update boat position based on the current amplitude
-            boatY = canvas.height / 2 + currentAmplitude+15;
+            boatY = canvas.height / 1.6 + currentAmplitude+15;
 
             // Draw the sine wave
             drawSineWave();
