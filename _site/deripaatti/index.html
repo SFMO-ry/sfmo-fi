@@ -1,0 +1,397 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Deripaatti - Suomen fysiikan- ja matematiikanopiskelijat ry</title>
+<meta name="description" content="Suomen fysiikan- ja matematiikanopiskelijat ry">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Suomen fysiikan- ja matematiikanopiskelijat ry">
+<meta property="og:title" content="Deripaatti">
+<meta property="og:url" content="http://localhost:4000/deripaatti/">
+
+
+  <meta property="og:description" content="Suomen fysiikan- ja matematiikanopiskelijat ry">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/deripaatti/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/site.webmanifest">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/assets/images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--deripaatti">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/SFMO-logo_small.svg" alt="Suomen fysiikan- ja matematiikanopiskelijat ry"></a>
+        
+        <a class="site-title" href="/">
+          Suomen fysiikan- ja matematiikanopiskelijat ry
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/hallitus">Hallitus</a>
+            </li><li class="masthead__menu-item">
+              <a href="/jasenet">Jäsenet</a>
+            </li><li class="masthead__menu-item">
+              <a href="/oodi">Oodi</a>
+            </li><li class="masthead__menu-item">
+              <a href="/iaps-historiaa">IAPS-historiaa</a>
+            </li><li class="masthead__menu-item">
+              <a href="/saannot">Säännöt</a>
+            </li><li class="masthead__menu-item">
+              <a href="/integraatiofest">Integraatiofest</a>
+            </li><li class="masthead__menu-item">
+              <a href="/deripaatti">Deripaatti</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Architects+Daughter">
+    <title>Moving Sine Wave with Boat</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            height: 100vh; /* Make the body take up the full height of the viewport */
+            display: flex;
+            flex-direction: column;
+            font-family: "Architects Daughter", sans-s;
+        }
+        #sineCanvas {
+            background-color: white;
+            position: absolute;
+            z-index: -1;
+        }
+        h1 {
+            font-family: "Architects Daughter", sans-s;
+        }
+        #deripaatti-info {
+            text-align: center;
+            overflow-y: scroll;
+            font-size: x-large;
+            position: absolute;
+            max-height: 55vh;
+            background: rgba(28, 240, 255, 0.05);
+            border-radius: 10%;
+            border: 0.5px solid black;
+            left:5%;
+            width: 90%;
+            margin-top: 5px;
+            -ms-overflow-style: none;  /* Internet Explorer 10+ */
+            scrollbar-width: none;  /* Firefox */
+        }
+        #deripaatti-info::-webkit-scrollbar {
+            display: none; 
+        }
+        #footer {
+            z-index: -2;
+        }
+    </style>
+   </head>
+<body>
+    <canvas id="sineCanvas"></canvas>
+    <!-- Boat image -->
+    <img id="boatImage" src="../paattiv3.png" alt="Boat" style="display: none;">
+
+    <script>
+        let canvas = document.getElementById("sineCanvas");
+        let initContent = document.getElementsByClassName("initial-content")[0];
+        console.log(initContent);
+        const context = canvas.getContext("2d");
+        // Set canvas size
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        let fontSize = Math.min((canvas.width / 100) * 5.5, 40); // Calculate font size based on viewport width
+        let lineHeight = fontSize; // Adjust this value to control the spacing between lines
+        context.font = `${fontSize}px Architects Daughter`;
+        // Sine wave parameters
+        const amplitude = 60;
+        let speedAmp = 1;
+        let frequency = 0.1*100/canvas.height;
+        
+        let phase = 0;
+
+        // Boat parameters
+        const boatImage = document.getElementById("boatImage");
+        const boatWidth = canvas.height / 5;
+        const boatHeight = canvas.height / 5;
+        let boatX = canvas.width / 2 - boatWidth / 2;
+        let boatY = canvas.height / 2;
+        let boatRotation = 0;
+        initContent.addEventListener('click', function(e) {
+            speedAmp = speedAmp+0.1;
+        });
+        function drawGraphPaper() {
+            // Draw horizontal grid lines
+            for (let y = 0; y < canvas.height; y += 20) {
+                context.beginPath();
+                context.moveTo(0, y);
+                context.lineTo(canvas.width, y);
+                context.strokeStyle = "#ddd"; // Grid line color
+                context.stroke();
+            }
+
+            // Draw vertical grid lines
+            for (let x = 0; x < canvas.width; x += 20) {
+                context.beginPath();
+                context.moveTo(x, 0);
+                context.lineTo(x, canvas.height);
+                context.strokeStyle = "#ddd"; // Grid line color
+                context.stroke();
+            }
+        }
+        function drawSineWave() {
+            // Clear canvas
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+            drawGraphPaper();
+            // Draw sine wave
+            context.beginPath();
+            context.moveTo(0, canvas.height / 2);
+            context.font = `${fontSize}px Architects Daughter`;
+           /* let infoText = 'Helsinki - Tallinna 22h-risteily!\nIllan pääesintyjä BESS\nLähtö pe 22.3 klo 18.35\nHinta: 48€/hytti+polttoainemaksu';
+            var infoLines = infoText.split('\n');
+            for (var i = 0; i < infoLines.length; i++) {
+                context.fillText(infoLines[i], 40, 100 + i * lineHeight);
+             }*/
+            for (let x = 0; x < canvas.width; x++) {
+                const y = canvas.height / 1.6 + amplitude * Math.sin(frequency * x + phase-0.6);
+                context.lineTo(x, y+100);
+            }
+
+            context.strokeStyle = "#000";
+            context.stroke();
+        }
+
+        function drawBoat() {
+            // Calculate slope at boat position
+            const slope = amplitude * frequency * Math.cos(frequency * boatX + phase);
+
+            // Calculate rotation angle based on slope
+            boatRotation = Math.atan(slope);
+
+            // Draw boat image with rotation
+            context.save();
+            context.translate(boatX + boatWidth / 2, boatY+100);
+            context.rotate(boatRotation-(20 * Math.PI / 180));
+            context.drawImage(boatImage, -boatWidth / 2, -boatHeight / 2, boatWidth, boatHeight);
+            context.restore();
+        }
+
+        function animate() {
+            // Update phase to make the wave move
+            phase -= 0.02*speedAmp;
+
+            // Get current wave amplitude
+            const currentAmplitude = amplitude * Math.sin(frequency * boatX + phase-0.1);
+
+            // Update boat position based on the current amplitude
+            boatY = canvas.height / 1.6 + currentAmplitude+15;
+
+            // Draw the sine wave
+            drawSineWave();
+
+            // Draw the boat
+            drawBoat();
+
+            // Request the next animation frame
+            requestAnimationFrame(animate);
+        }
+
+        // Start the animation
+        animate();
+
+        // Resize canvas when the window is resized
+        window.addEventListener("resize", () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            fontSize = Math.min((canvas.width / 100) * 5.5, 40); // Recalculate font size based on viewport width
+            lineHeight = fontSize; // Adjust this value to control the spacing between lines
+            context.font = `${fontSize}px Architects Daughter`; // Set the new font size
+            boatX = canvas.width / 2 - boatWidth / 2; // Center the boat after resizing
+        });
+    </script>
+</body>
+</html>
+
+
+<!-- Your page content goes here -->
+<div id="deripaatti-info">
+<h1> Deripaatti 2024 </h1>
+<b>Ohoi!</b><br />
+Rakkaat SFMO:n jäsenjärjestöt, nyt se on varmaa. Pitkään odotettu <b>Deripaatti 2024</b> järjestetään 22.3.–23.3. Tallinkin M/S Victoria I laivalla. Tämä 22 tuntia kestävä spektaakkeli kerää yhteen kaikki fysiikan ja matematiikan opiskelijat ympäri Suomen unohtumattoman meriseikkailun pariin.
+<br /><br />
+<h1><b>Risteilyaikataulu:</b></h1>
+<b>22.3.</b>
+<li>Lähtö 18.35 <b>Helsinki</b> (Länsiterminaali 2)</li>
+<b>23.3.</b>
+<li>Ostokset Tallinnassa 8.00–12.00</li>
+<li>Lähtö 12.30 <b>Tallinnasta</b></li>
+<li>Paluu 16.00 <b>Helsinkiin</b></li>
+<br />
+<h1> Illan pääesintyjä <b><a href="https://open.spotify.com/artist/3iF1ik49IHY72yBodxN9ec?si=oKoOc-9LQFeaC2Y7JR906Q">BESS</a></b> </h1>
+<h1><b>Mitä tarvitset mukaan:</b></h1>
+<li>Henkilöllisyystodistuksen
+<li>Haalarit
+<li>Juhlamieltä!
+<br /><br />
+Laivakohtaisen infon löydät osoitteesta <a href="https://fi.tallink.com/victoria">Tallink Silja</a>
+</li></li></li></div>
+
+  
+<!-- Your custom content goes here -->
+
+<style>
+    
+</style>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+    <ul class="social-icons">
+      
+  
+      
+        
+          
+            <li><a href="https://www.instagram.com/sfmo.official/?hl=fi" rel="nofollow noopener noreferrer"><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/sfmo.official" rel="nofollow noopener noreferrer"><i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+          
+        
+      
+  
+      
+    </ul>
+  </div>
+  
+  <div class="page__footer-copyright">&copy; 2024 Suomen fysiikan- ja matematiikanopiskelijat ry.</div>
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

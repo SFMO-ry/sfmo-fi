@@ -1,4 +1,21 @@
-theme: jekyll-theme-cayman
-
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+layout: single
+include: ["_pages"]
+minimal_mistakes_skin: "air"
+logo: "/assets/images/SFMO-logo_small.svg"
 title: "Suomen fysiikan- ja matematiikanopiskelijat ry"
 description: "Suomen fysiikan- ja matematiikanopiskelijat ry"
+plugins:
+  - jekyll-include-cache
+
+footer: 
+  links:
+    - label: "Instagram"
+      icon: "fab fa-instagram"
+      url: "https://www.instagram.com/sfmo.official/?hl=fi"
+    - label: "Facebook"
+      icon: "fab fa-facebook"
+      url: "https://www.facebook.com/sfmo.official"
+
+atom_feed:
+  hide: true
