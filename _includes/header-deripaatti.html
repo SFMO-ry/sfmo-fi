@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Architects+Daughter">
-    <title>Moving Sine Wave with Boat</title>
     <style>
         body {
             margin: 0;
@@ -54,20 +53,19 @@
     <script>
         let canvas = document.getElementById("sineCanvas");
         let initContent = document.getElementsByClassName("initial-content")[0];
-        console.log(initContent);
         const context = canvas.getContext("2d");
         // Set canvas size
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
-
+        
         let fontSize = Math.min((canvas.width / 100) * 5.5, 40); // Calculate font size based on viewport width
         let lineHeight = fontSize; // Adjust this value to control the spacing between lines
         context.font = `${fontSize}px Architects Daughter`;
         // Sine wave parameters
-        const amplitude = 60;
+        let amplitude = 60;
         let speedAmp = 1;
         let frequency = 0.1*100/canvas.height;
-        
+        let boatJumpFlag = 0;
         let phase = 0;
 
         // Boat parameters
@@ -78,7 +76,7 @@
         let boatY = canvas.height / 2;
         let boatRotation = 0;
         initContent.addEventListener('click', function(e) {
-            speedAmp = speedAmp+0.5;
+            speedAmp = speedAmp+0.3;
         });
         function drawGraphPaper() {
             // Draw horizontal grid lines
@@ -124,7 +122,7 @@
 
         function drawBoat() {
             // Calculate slope at boat position
-            const slope = amplitude * frequency * Math.cos(frequency * boatX + phase);
+            let slope = amplitude * frequency * Math.cos(frequency * boatX + phase);
 
             // Calculate rotation angle based on slope
             boatRotation = Math.atan(slope);
@@ -142,7 +140,13 @@
             phase -= 0.02*speedAmp;
 
             // Get current wave amplitude
-            const currentAmplitude = amplitude * Math.sin(frequency * boatX + phase-0.1);
+            let currentAmplitude = amplitude * Math.sin(frequency * boatX + phase-0.1);
+            if(speedAmp>4 && currentAmplitude<10 && currentAmplitude>7) {
+                boatJumpFlag = 1;
+            }
+            if(speedAmp>4 && boatJumpFlag == 1 && currentAmplitude<10) {
+                currentAmplitude = amplitude *2* Math.sin(frequency * boatX + phase-0.1);
+            }
 
             // Update boat position based on the current amplitude
             boatY = canvas.height / 1.6 + currentAmplitude+15;
