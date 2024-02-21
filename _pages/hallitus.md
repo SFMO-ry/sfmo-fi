@@ -5,12 +5,12 @@ permalink: /hallitus
 
 # Hallitus 2024
 Suomen fysiikan- ja matematiikanopiskelijat ry:n hallitus vuonna 2024
-oli seuraava kokoonpanoltaan:
+on seuraava kokoonpanoltaan:
 
 * Pauli Anttonen, puheenjohtaja (Lateksii ry)
 * Mikael Myllymäki, taloudenhoitaja (Ynnä ry)
 * Mikko Sipola, sihteeri (Kvantti ry)
-* Iiro Myllymäki, varapheenjohtaja (Delta ry)
+* Iiro Myllymäki, varapuheenjohtaja (Delta ry)
 * Iida Vänttinen (Kvantti ry)
 * Saku Kosonen (Matrix ry)
 * Ira Laihanen (Matrix ry)
