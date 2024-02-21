@@ -73,7 +73,7 @@ PL 68 (Pietari Kalmin katu 5)
 00014 Helsingin yliopisto  
 matrix-hallitus[ät]helsinki.fi  
 
-## [Quantum](http://web.abo.fi/karen/special/squantum/)
+## [Quantum rf](http://web.abo.fi/karen/special/squantum/)
 Fysikerförening Quantum vid Åbo Akademi r.f.    
 Åbo Akademi  
 Henriksgatan 2  
