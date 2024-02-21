@@ -16,27 +16,27 @@ IntegraatioFest kiertää vuosittain eri kaupungeissa, ja alta voit löytää vu
 
 Nro | Vuosi | Paikka | Nimi
 ----|--------|---------|----------
-I   |	2001 |	Otaniemi |	<b>Fysikerfest</b>
-II |	2002 |	Kuopio | 
-III |	2003 |	Turku |	
-IV |	2004 |	Jyväskylä |	 
-V  |	2005 |	Otaniemi |	
-VI |	2006 |	Tampere |	
-VII |	2007 |	Turku |	
-VIII |	2008 |	Tampere |	
-IX |	2009 |	Otaniemi |	
-X  |	2010 |	Tampere |	
-XI |	2011 |	Oulu |	
-XII |	2012 |	Jyväskylä |	
-XIII |	2013 |	Helsinki |	
-XIV |	2014 |	Turku |	
-XV |	2015 |	Tampere |	
-XVI |	2016 |	Otaniemi |	
-XVII |	2017 |	Kuopio |	
-XVIII |	2018 |	Oulu |	
-XIX |	2019 |	Jyväskylä |	<b>Integraatiofest</b>
-XX |	2020 |	- |
-XXI |	2021 |	Helsinki | 
-XXII |	2022 |	Tampere |
-XXIII |	2023 |	Lappeenranta |	
 XXIV |	2024 |	Turku |	
+XXIII |	2023 |	Lappeenranta |	
+XXII |	2022 |	Tampere |
+XXI |	2021 |	Helsinki | 
+XX |	2020 |	- |
+XIX |	2019 |	Jyväskylä |	<b>Integraatiofest</b>
+XVIII |	2018 |	Oulu |	
+XVII |	2017 |	Kuopio |	
+XVI |	2016 |	Otaniemi |	
+XV |	2015 |	Tampere |	
+XIV |	2014 |	Turku |	
+XIII |	2013 |	Helsinki |	
+XII |	2012 |	Jyväskylä |	
+XI |	2011 |	Oulu |	
+X |	2010 |	Tampere |	
+IX |	2009 |	Otaniemi |	
+VIII |	2008 |	Tampere |	
+VII |	2007 |	Turku |	
+VI |	2006 |	Tampere |	
+V |	2005 |	Otaniemi |	
+IV |	2004 |	Jyväskylä |	 
+III |	2003 |	Turku |	
+II |	2002 |	Kuopio | 
+I   |	2001 |	Otaniemi |	<b>Fysikerfest</b>
