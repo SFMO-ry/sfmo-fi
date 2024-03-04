@@ -2,15 +2,79 @@
 layout: splash
 permalink: /integraatiofest
 ---
-## Integraatiofest
+# IntegraatioFest
 
-IntegraatioFest (aiemmin FysikerFest) on vuodesta 2000 lähtien järjestetty tapahtuma, joka kokoaa yhteen fysiikan ja myöhemmin myös matematiikan opiskelijat vuosittaiseen opiskelijakonferenssiin. Tapahtuma on suunnattu matematiikan ja fysiikan opiskelijoille, tarjoten mahdollisuuden syventyä fysiikan ja matematiikan maailmaan sekä luoda kontakteja muiden saman alan opiskelijoiden kanssa.
+IntegraatioFest (aiemmin FysikerFest) on vuodesta 2000 lähtien järjestetty tapahtuma, joka kokoaa yhteen fysiikan ja myöhemmin myös matematiikan opiskelijat vuosittaiseen opiskelijakonferenssiin. Tapahtuma on suunnattu matematiikan ja fysiikan opiskelijoille, tarjoten mahdollisuuden syventyä fysiikan ja matematiikan maailmaan sekä luoda kontakteja muiden alan opiskelijoiden kanssa.
 
-Festien ohjelmaan kuuluu monipuolinen päiväohjelma, joka sisältää luentoja, excursioita, PLANCKS-fysiikkakilpailun sekä IMC-matematiikkakilpailun karsinnat sekä usein myös posterisession. Näiden lisäksi tapahtuma tarjoaa ainutlaatuisen tilaisuuden tutustua paikalliseen fysiikan sekä matematiikan tutkimukseen ja alan yrityksiin. Iltaohjelma puolestaan on verkostoitumiseen keskittyvää, sisältäen perinteiset festisitsit sekä muuta järjestettyä toimintaa, esimerkiksi rastikierroksen tai live-bändin.
+Festien ohjelmaan kuuluu monipuolinen päiväohjelma, joka sisältää luentoja, excursioita, PLANCKS-fysiikkakilpailun ja IMC-matematiikkakilpailun karsinnat sekä usein myös posterisession. Näiden lisäksi tapahtuma tarjoaa ainutlaatuisen tilaisuuden tutustua paikalliseen fysiikan sekä matematiikan tutkimukseen ja alan yrityksiin. Iltaohjelma puolestaan on verkostoitumiseen keskittyvää, sisältäen perinteiset festisitsit sekä muuta järjestettyä toimintaa, esimerkiksi rastikierroksen tai live-bändin.
 
-IntegraatioFest on siis myös loistava tilaisuus tutustua muiden Suomen fysiikan ja matematiikan opiskelijoiden kanssa. Tapahtuma on suunnattu SFMO:n jäsenistölle ja tapahtuman järjestää vuosittain aina yksi SFMO:hon kuuluvista järjestöistä. Nykyisen vuoden ohjelman löydät osoitteesta: [Integraatiofest](https://www.integraatiofest.fi).
+IntegraatioFest on siis myös loistava tilaisuus tutustua muihin Suomen fysiikan ja matematiikan opiskelijoihin. Tapahtuma on suunnattu SFMO:n jäsenistölle ja tapahtuman järjestää vuosittain aina yksi SFMO:hon kuuluvista järjestöistä. Nykyisen vuoden ohjelman löydät [IntegraatioFestien verkkosivuilta](https://www.integraatiofest.fi).
 
-IntegraatioFest kiertää vuosittain eri kaupungeissa, ja alta voit löytää vuosikohtaiset tiedot Festien järjestäjä paikkakunnasta. Tulevan vuoden Integraatiofestien järjestäjä valitaan aina Integraatiofesteillä järjestettävässä SFMO:n syyskokouksessa.
+IntegraatioFest kiertää vuosittain eri kaupungeissa, ja sivun alaosasta voit löytää vuosikohtaiset tiedot Festien järjestäjä paikkakunnasta. Tulevan vuoden Integraatiofestien järjestäjä valitaan aina Integraatiofesteillä järjestettävässä SFMO:n syyskokouksessa.
+
+## PLANCKS- ja IMC-karsinnat
+
+IntegraatioFestin ohessa järjestetään karsinnat kansainväliseen opiskelijoiden väliseen fysiikkakilpailuun **PLANCKS** ja matematiikkakilpailuun **IMC**.
+
+Suomen fysiikan- ja matematiikanopiskelijat ry (SFMO) osallistuu karsintojen perusteella valittujen edustusjoukkueiden tukemiseen etsimällä rahoitusta ja tarjoamalla ohjeistusta.
+
+SFMO ei voi taata, että kerätty rahamäärä riittää koko kisamatkan kustantamiseen. Kilpailijoille saattaa siis jäädä jotain maksettavaksi myös omasta pussista. Luultavasti kisamatkan hinta kuitenkin laskee merkittävästi.
+
+Karsintoihin osallistuminen ei edellytä IntegraatioFesteille osallistumista, mutta toki koko tapahtumaan osallistuminen on äärimmäisen suositeltavaa.
+
+Tarkempaa tietoa karsintojen käytännön toteutuksesta tarjotaan lähempänä Festejä.
+
+**Aikataulutuksellisista syistä karsinnat järjestetään todennäköisesti samaan aikaan.**
+
+Mikäli haluat osallistua molempiin kilpailuihin, osallistu PLANCKS-karsintaan, koska tässä varsinaiseen kilpailuun pääsy on rajoitetumpaa. Voit selvittää karsintojen jälkeen, josko IMC-joukkueeseen olisi jäänyt tilaa. Vaikkei joukkueessa olisi tilaa, voit silti osallistua IMC-kilpailuun täysin vapaasti, mutta joudut hoitamaan rahallisen puolen (kilpailumaksu n. 500 € ja matkustus) itse. 
+
+---
+
+### Fysiikkakilpailu PLANCKS
+(“Physics League Across Numerous Countries for Kick-ass Students”)
+
+- Yliopisto-opiskelijoiden välinen fysiikkakilpailu
+- Kilpailuun on maakohtainen kiintiö, tyypillisesti 1 joukkue per valtio
+- Edustusjoukkue valitaan maakohtaisissa karsinnoissa
+- Kyseessä on joukkuekilpailu, jossa joukkueen (3-4 hlö) sisäinen kommunikaatio on sallittu (ei välttämättä karsinnoissa mahdollista)
+- Kilpailun tehtävät miltä vain fysiikan alalta
+- Tehtävät ja vastaukset englanniksi
+- Järjestetään vaihtuvassa kaupungissa yleensä toukokuun lopulla. Vuonna 2024 loppukilpailu järjestetään Dublinissa Irlannissa 23.5.-27.5.
+
+[Lisätietoa kilpailusta](https://iaps.info/events/plancks/)
+[Vanhoja tehtäviä](https://www.dpg-physik.de/vereinigungen/fachuebergreifend/ak/akjdpg/events/wettbewerbe/plancks/programme/competition)
+
+#### Karsinnoista:
+
+Karsintoihin osallistutaan 3-4 hengen joukkueena. Paras tai parhaat joukkueet valitaan Suomen edustusjoukkueeksi PLANCKS-kilpailuun. 
+
+---
+
+### Matematiikkakilpailu IMC
+(“International Mathematics Competition for University Students”)
+
+- Yliopisto-opiskelijoiden välinen matematiikkakilpailu
+- Kilpailu on tarkoitettu 1.- 4. vuoden matematiikan opiskelijoille ja säännöissä on ikärajana 23v, mutta tästä voidaan joissain tapauksissa poiketa
+- Ei maakohtaista kiintiötä, vaan kilpailuun voi osallistua kuka vain sääntöjen ehdot toteuttava henkilö.
+- Kilpailuun voi osallistua joukkueena (n.4-5 hlö) tai itsenäisesti, mutta varsinainen suoritus tehdään kuitenkin itsenäisesti
+- Joukkueessa tyypillisesti mukana myös joukkueenjohtaja, joka on akateemisen työpaikan yliopistossa omaava henkilö
+- Kilpailun tehtävät algebran, reaali- ja kompleksianalyysin, geometrian sekä kombinatoriikan aloilta
+- Tehtävät ja vastaukset englanniksi
+- Järjestetään tyypillisesti Blagoevgradissa Bulgariassa heinä-elokuun vaihteessa
+
+[Lisätietoa ja vanhoja tehtäviä](https://www.imc-math.org.uk/)
+
+#### Karsinnoista:
+
+Koska IMC-kilpailussa ei ole maakohtaisia kiintiöitä, kuka vain säännöt toteuttava henkilö voi osallistua. Näiden karsintojen perusteella määräytyy kuitenkin joukkue, jonka kisamatkan rahankeruuseen ja muuhun ohjeistukseen SFMO osallistuu.
+
+Voit siis osallistua lopulliseen IMC-kilpailuun riippumatta siitä, miten suoriuduit karsinnoissa tai osallistuitko edes karsintoihin. Tällöin joudut kuitenkin hoitamaan kisamatkan taloudellisen puolen (kisamaksu n. 500€ ja matkustus) itse.
+
+Karsintoihin osallistutaan joukkueena (max. 5 hlö) tai yksilönä. Parhaiten suoriutuneista rakennetaan kisajoukkue. Karsintoihin osallistuneita joukkueita tai yksilöitä saatetaan yhdistellä lopullisen kisajoukkueen muodostamiseksi.
+
+Joukkueenjohtajaa ei vielä karsintavaiheessa tarvitse olla.
+
+---
 
 ## Integraatiofestit / Fysikerfestit läpi vuosien:
 
