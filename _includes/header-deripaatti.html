@@ -17,7 +17,8 @@
         #sineCanvas {
             background-color: white;
             position: absolute;
-            z-index: -1;
+            z-index: 1;
+            cursor: pointer;
         }
         h1 {
             font-family: "Architects Daughter", sans-s;
@@ -34,6 +35,7 @@
             left:5%;
             width: 90%;
             margin-top: 5px;
+            z-index: 2;
             -ms-overflow-style: none;  /* Internet Explorer 10+ */
             scrollbar-width: none;  /* Firefox */
         }
@@ -43,40 +45,89 @@
         #footer {
             z-index: -2;
         }
+        #img-div {
+            width: 100%;
+            margin: 0 auto; /* Center the container */ 
+            overflow: hidden;
+            text-align: center;
+        }
+        #img-div img {
+            width: 25%;
+            display: inline-block;
+            left: 25%; /* Make each image take up 50% of the container width */
+
+        }
     </style>
    </head>
 <body>
     <canvas id="sineCanvas"></canvas>
     <!-- Boat image -->
     <img id="boatImage" src="../paattiv3.png" alt="Boat" style="display: none;">
-
     <script>
         let canvas = document.getElementById("sineCanvas");
-        let initContent = document.getElementsByClassName("initial-content")[0];
         const context = canvas.getContext("2d");
+        let infoContainer = document.getElementsByClassName("initial-content")[0];
+        context.imageSmoothingEnabled = true;
         // Set canvas size
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
         
-        let fontSize = Math.min((canvas.width / 100) * 5.5, 40); // Calculate font size based on viewport width
-        let lineHeight = fontSize; // Adjust this value to control the spacing between lines
-        context.font = `${fontSize}px Architects Daughter`;
+        let scalingFactor = 1;
+        if (canvas.width < 500) {
+            scalingFactor = 0.5;
+        }
         // Sine wave parameters
         let amplitude = 60;
         let speedAmp = 1;
-        let frequency = 0.1*100/canvas.height;
+        let frequency = 0.1*100*(0.5/scalingFactor)/canvas.height;
         let boatJumpFlag = 0;
         let phase = 0;
-
+        let isJumping = false;
+        // Set the initial jump speed
+        let jumpSpeed = 5;
         // Boat parameters
         const boatImage = document.getElementById("boatImage");
-        const boatWidth = canvas.height / 5;
-        const boatHeight = canvas.height / 5;
+        const boatWidth = canvas.height*scalingFactor / 5;
+        const boatHeight = canvas.height*scalingFactor / 5;
         let boatX = canvas.width / 2 - boatWidth / 2;
         let boatY = canvas.height / 2;
+        let jumpY = 0;
         let boatRotation = 0;
-        initContent.addEventListener('click', function(e) {
-            speedAmp = speedAmp+0.3;
+        // Object parameters:
+        const objectSize = canvas.height*scalingFactor / 10;
+        let objectX = 0;
+        let objectY = getRandomObjectY();
+        let objectSpeed = 2*(scalingFactor**2);
+
+        // Score
+        let score = 0;
+        let devMode = 1;
+        // Array of Greek alphabet letters
+        const greekAlphabets = ['α', 'β', 'γ', 'δ', 'ε', 'ζ', 'η', 'θ', 'ι', 'κ', 'λ', 'μ', 'ν', 'ξ', 'ο', 'π', 'ρ', 'σ', 'τ', 'υ', 'φ', 'χ', 'ψ', 'ω'];
+        // Variable to store the current letter
+        let currentGreekLetter = getRandomGreekLetter();
+        let currentColor = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0");
+        // Game loop flag
+        let gameLoop = false;
+        
+        canvas.addEventListener('click', function(e) {
+            if(!gameLoop && speedAmp<=1) {
+                gameLoop = true;
+                score = 0;
+                infoContainer.setAttribute("max-height", "10vh");
+            }
+            if (!isJumping) {
+            jumpY = boatY;
+            isJumping = true;
+            } else if (boatY > canvas.height / 3) {
+                jumpSpeed += 5;
+            }
+        });
+        canvas.addEventListener('', function(e) {
+            if (!isJumping) {
+            jumpY = boatY;
+            isJumping = true;
+            }
         });
         function drawGraphPaper() {
             // Draw horizontal grid lines
@@ -105,7 +156,6 @@
             // Draw sine wave
             context.beginPath();
             context.moveTo(0, canvas.height / 2);
-            context.font = `${fontSize}px Architects Daughter`;
            /* let infoText = 'Helsinki - Tallinna 22h-risteily!\nIllan pääesintyjä BESS\nLähtö pe 22.3 klo 18.35\nHinta: 48€/hytti+polttoainemaksu';
             var infoLines = infoText.split('\n');
             for (var i = 0; i < infoLines.length; i++) {
@@ -135,10 +185,92 @@
             context.restore();
         }
 
+        function boatJump(currentAmplitude) {
+            // Decrease jump speed over time to simulate gravity
+            boatY = boatY-jumpSpeed;
+            jumpSpeed -= 0.1;
+            // If the boat reaches the bottom, stop the jump
+            if (boatY >= canvas.height / 1.6 + currentAmplitude+15) {
+                boatY = canvas.height / 1.6 + 15;
+                isJumping = false;
+                jumpSpeed = 5;
+                return;
+            }
+        }
+
+        function drawObject() {
+            context.font = `${objectSize}px Arial`; // Set the font for the object
+            context.fillStyle = currentColor;
+            context.strokeStyle = "black";
+            context.lineWidth = 2;
+            context.fillText(currentGreekLetter, objectX - objectSize / 4, objectY + objectSize / 4); // Adjust position based on the font size
+            context.strokeText(currentGreekLetter, objectX - objectSize / 4, objectY + objectSize / 4);
+            if(devMode == 1) {
+                context.fillText('.',boatX+50,boatY+100);
+            }
+        }
+
+        function moveObject() {
+            objectX += objectSpeed; // Adjust the speed of the object movement (you can change this value)
+
+            // If the object goes off the right side of the canvas, reset its position to the left
+            if (objectX > canvas.width) {
+                objectX = 0;
+                currentGreekLetter = getRandomGreekLetter();
+                gameLoop = false;
+                objectY = getRandomObjectY();
+            }
+        }
+
+        function getRandomGreekLetter() {
+            // Randomly select a Greek alphabet letter
+            return greekAlphabets[Math.floor(Math.random() * greekAlphabets.length)];
+        }
+
+        function getRandomObjectY() {
+            // Get a random value between canvas.height / 1.4 and canvas.height / 1.8
+            return Math.random() * (canvas.height / 1.4 - canvas.height / 2.5) + canvas.height / 2.5;
+        }
+
+        function checkCollision() {
+            // Calculate the distance between the center of the boat and the object
+            const distance = Math.sqrt(Math.pow(boatX+50 - objectX, 2) + Math.pow(boatY+100 - objectY, 2));
+            // If the distance is less than the sum of the boat and object sizes, they have collided
+            if (distance < 100*(scalingFactor+0.2)) {
+                // Handle collision (for example, increase score or perform any other action)
+                objectCollision();
+                speedAmp += 0.5*scalingFactor;
+                objectSpeed += 0.5*scalingFactor;
+            }
+        }
+
+        function objectCollision() {
+            objectX = 0;
+            score++;
+            currentGreekLetter = getRandomGreekLetter();
+            currentColor  = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0");
+            objectY = getRandomObjectY();
+        }
+
+        function drawScore() {
+            context.font = "20px Arial";
+            context.fillStyle = "#000";
+            context.fillText("Score: " + score, 20, canvas.height - 100);
+        }
+
+        function endGame() {
+            if(speedAmp>1) {
+                speedAmp -= 0.1;
+            }
+            infoContainer.setAttribute("max-height", "55vh");
+            objectSpeed = 2*(scalingFactor**2);
+        }
+
+
         function animate() {
             // Update phase to make the wave move
             phase -= 0.02*speedAmp;
-
+            
             // Get current wave amplitude
             let currentAmplitude = amplitude * Math.sin(frequency * boatX + phase-0.1);
             if(speedAmp>4 && currentAmplitude<10 && currentAmplitude>7) {
@@ -147,15 +279,29 @@
             if(speedAmp>4 && boatJumpFlag == 1 && currentAmplitude<10) {
                 currentAmplitude = amplitude *2* Math.sin(frequency * boatX + phase-0.1);
             }
-
+            if(isJumping) {
+                boatJump(currentAmplitude);
+            }
             // Update boat position based on the current amplitude
-            boatY = canvas.height / 1.6 + currentAmplitude+15;
+            if(!isJumping) {
+                boatY = canvas.height / 1.6 + currentAmplitude+15;  
+            }
 
             // Draw the sine wave
             drawSineWave();
 
             // Draw the boat
             drawBoat();
+
+             // Move and draw the object
+            if(gameLoop) {
+                moveObject();
+                drawObject();
+                checkCollision();
+                drawScore();
+            } else {
+                endGame();
+            }
 
             // Request the next animation frame
             requestAnimationFrame(animate);
@@ -168,9 +314,6 @@
         window.addEventListener("resize", () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
-            fontSize = Math.min((canvas.width / 100) * 5.5, 40); // Recalculate font size based on viewport width
-            lineHeight = fontSize; // Adjust this value to control the spacing between lines
-            context.font = `${fontSize}px Architects Daughter`; // Set the new font size
             boatX = canvas.width / 2 - boatWidth / 2; // Center the boat after resizing
         });
     </script>
