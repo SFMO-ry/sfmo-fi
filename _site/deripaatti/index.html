@@ -183,6 +183,7 @@
             z-index: 2;
             -ms-overflow-style: none;  /* Internet Explorer 10+ */
             scrollbar-width: none;  /* Firefox */
+            transition: max-height 0.5s ease;
         }
         #deripaatti-info::-webkit-scrollbar {
             display: none; 
@@ -208,7 +209,12 @@
     <canvas id="sineCanvas"></canvas>
     <!-- Boat image -->
     <img id="boatImage" src="../paattiv3.png" alt="Boat" style="display: none;">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
+        $(document).ready(function() {
+        // Select the element with ID "deripaatti-info"
+        var deripaattiInfoElement = $("#deripaatti-info");
+
         let canvas = document.getElementById("sineCanvas");
         const context = canvas.getContext("2d");
         let infoContainer = document.getElementsByClassName("initial-content")[0];
@@ -220,6 +226,10 @@
         let scalingFactor = 1;
         if (canvas.width < 500) {
             scalingFactor = 0.5;
+            var imageElements = $("#img-div img");
+            for (var i = 0; i < imageElements.length; i++) {
+                imageElements[i].style.width = "40%";
+            }
         }
         // Sine wave parameters
         let amplitude = 60;
@@ -243,7 +253,8 @@
         let objectX = 0;
         let objectY = getRandomObjectY();
         let objectSpeed = 2*(scalingFactor**2);
-
+        
+        let waveY = 40;
         // Score
         let score = 0;
         let devMode = 1;
@@ -255,17 +266,21 @@
         // Game loop flag
         let gameLoop = false;
         
+        deripaattiInfoElement[0].addEventListener('click', function(e) {
+           gameLoop = false;
+        });
+        
         canvas.addEventListener('click', function(e) {
             if(!gameLoop && speedAmp<=1) {
                 gameLoop = true;
                 score = 0;
-                infoContainer.setAttribute("max-height", "10vh");
+                deripaattiInfoElement[0].style.maxHeight = "10vh";
             }
             if (!isJumping) {
             jumpY = boatY;
             isJumping = true;
             } else if (boatY > canvas.height / 3) {
-                jumpSpeed += 5;
+                jumpSpeed += 5*scalingFactor;
             }
         });
         canvas.addEventListener('', function(e) {
@@ -308,7 +323,7 @@
              }*/
             for (let x = 0; x < canvas.width; x++) {
                 const y = canvas.height / 1.6 + amplitude * Math.sin(frequency * x + phase-0.6);
-                context.lineTo(x, y+100);
+                context.lineTo(x, y+waveY);
             }
 
             context.strokeStyle = "#000";
@@ -324,7 +339,7 @@
 
             // Draw boat image with rotation
             context.save();
-            context.translate(boatX + boatWidth / 2, boatY+100);
+            context.translate(boatX + boatWidth / 2, boatY+waveY);
             context.rotate(boatRotation-(20 * Math.PI / 180));
             context.drawImage(boatImage, -boatWidth / 2, -boatHeight / 2, boatWidth, boatHeight);
             context.restore();
@@ -351,7 +366,7 @@
             context.fillText(currentGreekLetter, objectX - objectSize / 4, objectY + objectSize / 4); // Adjust position based on the font size
             context.strokeText(currentGreekLetter, objectX - objectSize / 4, objectY + objectSize / 4);
             if(devMode == 1) {
-                context.fillText('.',boatX+50,boatY+100);
+                context.fillText('.',boatX+50,boatY+waveY);
             }
         }
 
@@ -379,7 +394,7 @@
 
         function checkCollision() {
             // Calculate the distance between the center of the boat and the object
-            const distance = Math.sqrt(Math.pow(boatX+50 - objectX, 2) + Math.pow(boatY+100 - objectY, 2));
+            const distance = Math.sqrt(Math.pow(boatX+50 - objectX, 2) + Math.pow(boatY+waveY - objectY, 2));
             // If the distance is less than the sum of the boat and object sizes, they have collided
             if (distance < 100*(scalingFactor+0.2)) {
                 // Handle collision (for example, increase score or perform any other action)
@@ -407,7 +422,7 @@
             if(speedAmp>1) {
                 speedAmp -= 0.1;
             }
-            infoContainer.setAttribute("max-height", "55vh");
+            deripaattiInfoElement[0].style.maxHeight = "55vh";
             objectSpeed = 2*(scalingFactor**2);
         }
 
@@ -460,6 +475,7 @@
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
             boatX = canvas.width / 2 - boatWidth / 2; // Center the boat after resizing
+        });
         });
     </script>
 </body>
