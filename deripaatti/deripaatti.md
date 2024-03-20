@@ -28,3 +28,6 @@ Rakkaat SFMO:n jäsenjärjestöt, nyt se on varmaa. Pitkään odotettu <b>Deripa
 <li>Juhlamieltä
 <br/><br/>
 Laivakohtaisen infon löydät osoitteesta <a href="https://fi.tallink.com/victoria">Tallink Silja</a>
+<br/>
+<br/>
+<i>Psst tiesitkö? <a href="https://www.tek.fi/fi"><b>TEK</b></a> on kompensoinut risteilyn aiheuttamat CO2-päästöt, jotta laivalla voidaan juhlia kestävämmin!</i>
