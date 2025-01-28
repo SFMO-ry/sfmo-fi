@@ -3,27 +3,28 @@ layout: splash
 permalink: /hallitus
 ---
 
-# Hallitus 2024
-Suomen fysiikan- ja matematiikanopiskelijat ry:n hallitus vuonna 2024 on seuraava kokoonpanoltaan:
+# Hallitus 2025
+Suomen fysiikan- ja matematiikanopiskelijat ry:n hallitus vuonna 2025 on seuraava kokoonpanoltaan:
 
-* Pauli Anttonen, puheenjohtaja (Lateksii ry)
-* Mikael Myllymäki, taloudenhoitaja (Ynnä ry)
-* Mikko Sipola, sihteeri (Kvantti ry)
-* Iiro Myllymäki, varapuheenjohtaja (Delta ry)
-* Maria Ahola (Delta ry)
-* Taru Haimi (Lateksii ry)
+* Mikael Myllymäki, puheenjohtaja (Ynnä ry)
+* Maria Ahola, taloudenhoitaja (Delta ry)
+* Taneli Korvuo, sihteeri (Epsilon ry)
+* Timo Norrkniivilä, varapuheenjohtaja (Fyysikkokilta ry)
 * Eppu Heinonen (Resonanssi ry)
-* Jenni Häkkinen (Resonanssi ry)
-* Henni Kiiskinen (Luuppi ry)
-* Saku Kosonen (Matrix ry)
-* Ville-Eemeli Kovanen (Fyysikkokilta ry)
-* Leevi Kämäräinen (Lateksii ry)
-* Ira Laihanen (Matrix ry)
-* Alexander Oiling (Matrix ry)
-* Iida Vänttinen (Kvantti ry)
+* Miika Heinonen (Sigma-kilta ry)
+* Katja Rossi (Lateksii ry)
+* Mikko Sipola (Kvantti ry)
 * Ronja Öhrnberg (Resonanssi ry)
+* Taru Haimi (Lateksii ry)
+* Pauli Anttonen (Lateksii ry)
+* Veera Niemi (Hiukkanen ry)
+* Leevi Malin (Hiukkanen ry)
+* Anni Nurmi (Matrix ry)
+* Atte Kivistö (Delta ry)
 
 # Edeltäviä hallituksia:
+
+SFMO ry:n [hallitus 2024:](/hallitus-2024)
 
 SFMO ry:n [hallitus 2023:](/hallitus-2023)
 
