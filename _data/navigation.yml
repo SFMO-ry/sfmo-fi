@@ -6,17 +6,20 @@ main:
     url: /jasenet
   - title: "Oodi"
     url: /oodi
-  - title: "IAPS-historiaa"
-    url: /iaps-historiaa
   - title: "Säännöt"
     url: /saannot
-  - title: "Tapahtumat"
-    subfolderitems:
-    - name: "Integraatiofest"
-      url: /integraatiofest
-    - name: "Deripaatti"
-      url: /deripaatti
-
+  - title: "Integraatiofest"
+    url: /integraatiofest
+  - title: "Deripaatti"
+    url: /deripaatti
+  - title: "PLANCKS-fysiikkakilpailu"
+    url: /plancks
+  - title: "IMC-matematiikkakilpailu"
+    url: /imc
+  - title: "IAPS-historiaa"
+    url: /iaps-historiaa
+  
+  
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
