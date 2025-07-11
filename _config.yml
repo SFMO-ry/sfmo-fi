@@ -3,7 +3,7 @@ layout: single
 include: ["_pages"]
 minimal_mistakes_skin: "air"
 logo: "/assets/images/SFMO-logo_small.svg"
-title: "Suomen fysiikan- ja matematiikanopiskelijat ry"
+title: "SFMO ry"
 description: "Suomen fysiikan- ja matematiikanopiskelijat ry"
 plugins:
   - jekyll-include-cache

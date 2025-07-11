@@ -10,10 +10,13 @@ main:
     url: /iaps-historiaa
   - title: "Säännöt"
     url: /saannot
-  - title: "Integraatiofest"
-    url: /integraatiofest
-  - title: "Deripaatti"
-    url: /deripaatti
+  - title: "Tapahtumat"
+    subfolderitems:
+    - name: "Integraatiofest"
+      url: /integraatiofest
+    - name: "Deripaatti"
+      url: /deripaatti
+
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
