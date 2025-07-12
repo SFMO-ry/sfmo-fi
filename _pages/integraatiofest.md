@@ -8,9 +8,9 @@ IntegraatioFest (aiemmin FysikerFest) on vuodesta 2000 lähtien järjestetty tap
 
 Festien ohjelmaan kuuluu monipuolinen päiväohjelma, joka sisältää luentoja, excursioita, [PLANCKS-fysiikkakilpailun](/plancks) ja [IMC-matematiikkakilpailun](imc) karsinnat sekä usein myös posterisession. Näiden lisäksi tapahtuma tarjoaa ainutlaatuisen tilaisuuden tutustua paikalliseen fysiikan sekä matematiikan tutkimukseen ja alan yrityksiin. Iltaohjelma puolestaan on verkostoitumiseen keskittyvää, sisältäen perinteiset festisitsit sekä muuta järjestettyä toimintaa, esimerkiksi rastikierroksen tai live-bändin.
 
-IntegraatioFest on siis myös loistava tilaisuus tutustua muihin Suomen fysiikan ja matematiikan opiskelijoihin. Tapahtuma on suunnattu SFMO:n jäsenistölle ja tapahtuman järjestää vuosittain aina yksi SFMO:hon kuuluvista järjestöistä. Nykyisen vuoden ohjelman löydät [IntegraatioFestien verkkosivuilta](https://www.integraatiofest.fi).
+IntegraatioFest on siis myös loistava tilaisuus tutustua muihin Suomen fysiikan ja matematiikan opiskelijoihin. Tapahtuma on suunnattu SFMO:n jäsenistölle ja tapahtuman järjestää vuosittain SFMO:hon kuuluva(t) järjestö(t). Nykyisen vuoden ohjelman löydät [IntegraatioFestien verkkosivuilta](https://www.integraatiofest.fi).
 
-IntegraatioFest kiertää vuosittain eri kaupungeissa, ja sivun alaosasta voit löytää vuosikohtaiset tiedot Festien järjestäjä paikkakunnasta. Tulevan vuoden IntegraatioFestien järjestäjä valitaan aina IntegraatioFesteillä järjestettävässä SFMO:n syyskokouksessa.
+IntegraatioFest kiertää vuosittain eri kaupungeissa, ja sivun alaosasta voit löytää vuosikohtaiset tiedot Festien järjestäjäpaikkakunnasta. Tulevan vuoden IntegraatioFestien järjestäjä valitaan aina IntegraatioFesteillä järjestettävässä SFMO:n syyskokouksessa.
 
 ## Integraatiofestit / Fysikerfestit läpi vuosien:
 
@@ -22,7 +22,7 @@ XXIII |	2023 |	Lappeenranta |
 XXII |	2022 |	Tampere |
 XXI |	2021 |	Helsinki | 
 XX |	2020 |	- |
-XIX |	2019 |	Jyväskylä |	:arrow_up:<b>Integraatiofest</b>
+XIX |	2019 |	Jyväskylä |	🠉<b>Integraatiofest</b>
 XVIII |	2018 |	Oulu |	
 XVII |	2017 |	Kuopio |	
 XVI |	2016 |	Otaniemi |	
@@ -40,4 +40,4 @@ V |	2005 |	Otaniemi |
 IV |	2004 |	Jyväskylä |	 
 III |	2003 |	Turku |	
 II |	2002 |	Kuopio | 
-I   |	2001 |	Otaniemi |	:arrow_up:<b>Fysikerfest</b>
+I   |	2001 |	Otaniemi |	🠉<b>Fysikerfest</b>
