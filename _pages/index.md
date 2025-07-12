@@ -28,7 +28,7 @@ Suomen fysiikan- ja matematiikanopiskelijat ry
 c/o Department of Physical Sciences
 Gustaf Hällströmin katu 2
 P.O.Box 64
-FIN-00014 University of Helsinki
+00014 University of Helsinki
 Finland
 sfmo-hallitus@googlegroups.com
 ```
