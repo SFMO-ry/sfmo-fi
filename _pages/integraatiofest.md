@@ -16,12 +16,13 @@ IntegraatioFest kiertää vuosittain eri kaupungeissa, ja sivun alaosasta voit l
 
 Nro | Vuosi | Paikka | Nimi
 ----|--------|---------|----------
+XXV |   2025 |  Otaniemi
 XXIV |	2024 |	Turku |	
 XXIII |	2023 |	Lappeenranta |	
 XXII |	2022 |	Tampere |
 XXI |	2021 |	Helsinki | 
 XX |	2020 |	- |
-XIX |	2019 |	Jyväskylä |	<b>Integraatiofest</b>
+XIX |	2019 |	Jyväskylä |	:arrow_up:<b>Integraatiofest</b>
 XVIII |	2018 |	Oulu |	
 XVII |	2017 |	Kuopio |	
 XVI |	2016 |	Otaniemi |	
@@ -39,4 +40,4 @@ V |	2005 |	Otaniemi |
 IV |	2004 |	Jyväskylä |	 
 III |	2003 |	Turku |	
 II |	2002 |	Kuopio | 
-I   |	2001 |	Otaniemi |	<b>Fysikerfest</b>
+I   |	2001 |	Otaniemi |	:arrow_up:<b>Fysikerfest</b>
