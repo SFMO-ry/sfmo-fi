@@ -53,7 +53,7 @@ Yliopistonranta 1 F
 kvanttihallitus[ät]gmail.com
 
 ## [Lateksii ry](https://lateksii.fi)
-Lateksii ry 
+Lateksii ry  
 LUT-yliopisto, Lappeenrannan kampus  
 Laserkatu 10  
 53850 Lappeenranta  
@@ -95,7 +95,7 @@ Linnanmaa J 2
 hallitus[ät]sigma-kilta.net
 
 ## [Ynnä ry](https://ynna.fi)
-Ynnä ry 
+Ynnä ry  
 Jyväskylän yliopisto  
 PL 35  
 40014 Jyväskylän yliopisto  
