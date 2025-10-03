@@ -38,8 +38,8 @@ sfmo-hallitus@googlegroups.com
 
 <p align="center">
   <img alt="Suomen Fyysikkoseura" src="/assets/images/SFS_logo.png" width="30%">
-&nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;
   <img alt="Luonnon-, ympäristö- ja metsätieteilijöiden liitto Loimu" src="/assets/images/loimu-vaaka-RGB.png" width="30%">
-&nbsp; &nbsp;
-  <img alt="Ohakune" src="/assets/images/Ohakune.png" width="30%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Ohakune" src="/assets/images/Ohakune.png" width="20%">
 </p>
