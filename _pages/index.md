@@ -21,14 +21,25 @@ Tärkeimpänä sivuilta löytyy SFMO:n [Oodi](/oodi)
 IAPS-historiaa: [SFMO:hon liittyen](/iaps-historiaa)
 
 ----->
-Yhteystiedot / Contact
+### Yhteystiedot / Contact
 
 ```
 Suomen fysiikan- ja matematiikanopiskelijat ry
-c/o Department of Physical Sciences
+c/o Opiskelijahuone/Resonanssi
 Gustaf Hällströmin katu 2
 P.O.Box 64
 00014 University of Helsinki
 Finland
+
 sfmo-hallitus@googlegroups.com
 ```
+
+### SFMO:n toiminnan ja 30-vuotisjuhlien mahdollistajina:
+
+<p align="center">
+  <img alt="Suomen Fyysikkoseura" src="/assets/images/SFS_logo.png" width="33%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Luonnon-, ympäristö- ja metsätieteilijöiden liitto Loimu" src="/assets/images/loimu-vaaka-RGB.png" width="33%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Ohakune" src="/assets/images/OHAKUNE-split_word.png" width="33%">
+</p>
