@@ -32,9 +32,9 @@ Toimintansa tukemiseksi yhdistys voi
 
 ## 3§ Jäsenet 
 
-Yhdistykseen varsinaiseksi jäseneksi voidaan hyväksyä rekisteröity yhdistys tai muu oikeuskelpoinenyhteisö joka hyväksyy yhdistyksen tarkoituksen ja jonka toiminta vastaa yhdistyksen tarkoitusta.
+Yhdistykseen varsinaiseksi jäseneksi voidaan hyväksyä rekisteröity yhdistys tai muu oikeuskelpoinen yhteisö joka hyväksyy yhdistyksen tarkoituksen ja jonka toiminta vastaa yhdistyksen tarkoitusta.
 
-Kannattavaksi jäseneksi voidaan hyväksyä yksityinen henkilö, rekisteröity yhdistys tai muuoikeuskelpoinen yhteisö, joka haluaa tukea yhdistyksen tarkoitusta ja toimintaa. Varsinaiset jäsenet hyväksyy hakemuksesta yhdistyksen kokous. 
+Kannattavaksi jäseneksi voidaan hyväksyä yksityinen henkilö, rekisteröity yhdistys tai muu oikeuskelpoinen yhteisö, joka haluaa tukea yhdistyksen tarkoitusta ja toimintaa. Varsinaiset jäsenet hyväksyy hakemuksesta yhdistyksen kokous. 
 
 Kunniapuheenjohtajaksi tai kunniajäseneksi voidaan hallituksen esityksestä yhdistyksen kokouksessa kutsua henkilö, joka on huomattavasti edistänyt ja tukenut yhdistyksen toimintaa. 
 
