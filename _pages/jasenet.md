@@ -73,6 +73,13 @@ PL 68 (Pietari Kalmin katu 5)
 00014 Helsingin yliopisto  
 matrix-hallitus[ät]helsinki.fi  
 
+## [Meridiaani ry](https://www.meridiaani.org/)
+Meridiaani ry, Meridian rf  
+Helsingin yliopisto  
+Gustaf Hällströmin katu 2 A  
+00500 Helsinki  
+hallitus[ät]meridiaani.org
+
 ## [Quantum rf](http://web.abo.fi/karen/special/squantum/)
 Fysikerförening Quantum vid Åbo Akademi r.f.    
 Åbo Akademi  
