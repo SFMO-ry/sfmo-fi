@@ -5,7 +5,7 @@ permalink: /deripaatti/
 ---
 <!-- Your page content goes here -->
 <div id = "deripaatti-info">
-<h1> Deripaatti 2025 </h1>
+<h1> Deripaatti 2026 </h1>
 
 <b>Ohoi!</b><br/>
 Rakkaat SFMO:n jäsenet, nyt se on varmaa. Pitkään odotettu <b>Deripaatti 2026</b> järjestetään 20.3.-21.3. Tallinkin M/S Victoria I laivalla. Tämä 22 tuntia kestävä spektaakkeli kerää yhteen kaikki fysiikan ja matematiikan opiskelijat ympäri Suomen unohtumattoman meriseikkailun pariin.
