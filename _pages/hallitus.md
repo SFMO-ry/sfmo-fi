@@ -8,7 +8,7 @@ Suomen fysiikan- ja matematiikanopiskelijat ry:n hallitus vuonna 2026 on seuraav
 
 * Timo Norrkniivilä, puheenjohtaja (Fyysikkokilta ry)
 * Mikael Myllymäki, taloudenhoitaja (Ynnä ry)
-* Einari Taini, varapuheenjohtaja (Hiukkanen ry)
+* Einari Tani, varapuheenjohtaja (Hiukkanen ry)
 * Atte Kivistö, sihteeri (Delta ry)
 * Ellinoora Harvio (Sigma-kilta ry)
 * Joonatan Huhtasalo (Meridiaani ry)
