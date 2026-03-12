@@ -16,7 +16,8 @@ IntegraatioFest kiertää vuosittain eri kaupungeissa, ja sivun alaosasta voit l
 
 Nro | Vuosi | Paikka | Nimi
 ----|--------|---------|----------
-XXV |   2025 |  Otaniemi
+XXVI |  2026 |  Oulu
+XXV  |  2025 |  Otaniemi
 XXIV |	2024 |	Turku |	
 XXIII |	2023 |	Lappeenranta |	
 XXII |	2022 |	Tampere |
