@@ -32,6 +32,8 @@ P.O.Box 64
 Finland
 
 sfmo-hallitus@googlegroups.com
+
+sfmo.hallitus@gmail.com
 ```
 
 ### SFMO:n toiminnan ja 30-vuotisjuhlien mahdollistajina:
